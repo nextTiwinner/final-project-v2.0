@@ -1,0 +1,171 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color:white;
+    margin: auto;
+  }
+  
+  *{transition:all 0.5s ease-in-out;}
+  
+  .navbar{
+    background: rgb(174,238,193);
+    background: linear-gradient(90deg, rgba(174,238,193,1) 0%, rgba(148,187,233,1) 100%);
+    height:60px;
+    width:100%;
+    box-shadow: 0px 5px 3px -1px silver;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img{
+    padding-left: 15%;
+    height: 55px;
+  }
+  
+  nav{
+    padding-right: 2.5%;
+  }
+  
+  ul li{
+    display: inline-block; 
+    padding-right: 10px;
+    font-size: 15px; 
+    font-family: Segoe UI;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  nav a{
+    color:black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+  }
+  nav a:hover{
+    color:white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+  }
+  
+  
+  #main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .section{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .contentimg {
+    position: static;
+    width: 400px;
+    float: left;
+    padding: 20px;
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+  
+  #products {
+    flex-direction: row-reverse;
+  }
+  
+  .desc {
+    position: relative;
+    text-align: justify;
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: -40px;
+  }
+  
+  .subsectiontitle {
+    font-size: 46px;
+    font-family: Segoe UI;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    margin-top: 25px;
+    padding: 0px;
+  }
+  
+  .subsection {
+    font-family: Optima;
+    font-size: 24px;
+  }
+  
+  #footer {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background: lavender; 
+    box-shadow: 0px -5px 3px -1px silver;
+  }
+  
+  #sm{
+    padding-left: 2.5%;
+   }
+  
+  #sm img {
+    height: 30px;
+    padding: 5px;
+  }
+  
+  #copyright {
+    padding-right: 2.5%;
+    font-family: Segoe UI;
+    
+  }
+  @media screen and (min-width: 300px) and (max-width: 992px) {
+    header{
+        flex-direction: column;
+        position: relative;
+    }
+    .navbar {
+     height: 50px;
+     width: 118%;
+    }
+    .contentimg {
+        width: 50%;
+        margin-left: 60px;
+    }
+    .subsectiontitle{
+        font-size: 23px;
+        padding-right: 70px;
+        margin-right: 60px;
+        text-align: justify;
+    }
+    .subsection{
+        font-size: 12px;
+        text-align: justify;
+        margin-right: 79px;
+        position: initial;
+    }
+    .desc {
+        width: 50%;
+        position: initial;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: -40px;
+        
+    }
+   
+}
